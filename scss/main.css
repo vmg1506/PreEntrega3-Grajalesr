@@ -1,0 +1,685 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+}
+
+.presentacion {
+  background-image: url(../img/presentacion.jpeg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+.presentacion .presentacion__txt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0.8;
+  background-color: rgb(252, 251, 251);
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 60px -16px rgb(146, 148, 156);
+  position: absolute;
+  left: 50px;
+}
+
+.seccion1 {
+  background-color: grey;
+  text-align: center;
+}
+.seccion1 .txt1 {
+  display: flex;
+  height: 188px;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  top: 40%;
+  bottom: 50%;
+  font-size: 1.7vw;
+  margin: 0 auto;
+}
+.seccion1 .txt2 {
+  display: flex;
+  height: 188px;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  top: 40%;
+  bottom: 50%;
+  font-size: 1.7vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .seccion1 .col .txt1 {
+    font-size: 1.5vw;
+  }
+  .seccion1 .col .txt2 {
+    font-size: 1.5vw;
+  }
+}
+.seccion2 {
+  background-color: rgb(133, 142, 150);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+.seccion2 .seccion2__img {
+  width: 150px;
+  height: 150px;
+  margin-top: 15px;
+}
+.seccion2 .seccion2__img img {
+  border-radius: 50%;
+  animation: miEfecto 2s linear 1s 1;
+}
+
+.seccion3 {
+  background-image: url(../img/img_04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+.seccion3 .contenedor {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "txt1 img" "txt1 txt2";
+  color: white;
+}
+.seccion3 .txt1 {
+  grid-area: txt1;
+  background-color: rgb(122, 122, 122);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+}
+.seccion3 .txt1 div {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 40%;
+}
+.seccion3 .img {
+  background-image: url(../img/img_05.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: img;
+  width: 100%;
+  height: auto;
+}
+.seccion3 .txt2 {
+  grid-area: txt2;
+  background-color: rgb(226, 225, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .seccion3 {
+    background-image: url(../img/img_04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+  }
+  .seccion3 .contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 20% 40%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "txt1" "img" "txt2";
+  }
+  .seccion3 .contenedor .txt1 {
+    grid-area: txt1;
+    font-size: smaller;
+  }
+  .seccion3 .contenedor .txt1 div {
+    height: 80%;
+  }
+  .seccion3 .contenedor .img {
+    grid-area: img;
+    height: 100%;
+  }
+  .seccion3 .contenedor .txt2 {
+    grid-area: txt2;
+  }
+  .seccion3 .contenedor .txt2 div {
+    width: auto;
+  }
+}
+.seccion4 {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(173, 169, 169);
+}
+
+.contenedor2 {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "area1 area2 area3";
+}
+
+.area1 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  grid-template-areas: "sub_area1";
+  grid-area: area1;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub_area1 {
+  grid-area: sub_area1;
+  font-size: smaller;
+  animation: miEfecto 2s linear 1s 1;
+}
+
+.area2 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-areas: "sub_area2";
+  grid-area: area2;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub_area2 {
+  grid-area: sub_area2;
+  font-size: smaller;
+  animation: miEfecto 2s linear 1s 1;
+}
+
+.area3 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  grid-template-areas: "sub_area3";
+  grid-area: area3;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub_area3 {
+  grid-area: sub_area3;
+  font-size: smaller;
+  animation: miEfecto 2s linear 1s 1;
+}
+
+@media (min-width: 767px) {
+  .area1:hover {
+    box-shadow: -11px -7px 9px 3px black;
+  }
+  .area2:hover {
+    box-shadow: 1px -2px 9px 9px black;
+  }
+  .area3:hover {
+    box-shadow: 11px -7px 9px 3px black;
+  }
+}
+@media (max-width: 767px) {
+  .seccion4 {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(199, 197, 197);
+  }
+  .contenedor2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25%;
+    margin-top: 10%;
+    margin: 10% auto;
+    gap: 10% 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "area1" "area2" "area3";
+  }
+  .area1 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-areas: "sub_area1";
+    grid-area: area1;
+  }
+  .sub_area1 {
+    grid-area: sub_area1;
+  }
+  .area2 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-areas: "sub_area2";
+    grid-area: area2;
+  }
+  .sub_area2 {
+    grid-area: sub_area2;
+  }
+  .area3 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-areas: "sub_area3";
+    grid-area: area3;
+  }
+  .sub_area3 {
+    grid-area: sub_area3;
+  }
+}
+.seccion5 {
+  background-color: rgb(122, 122, 122);
+}
+
+.contenedor3 {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "std1 std2" "std1 std3";
+}
+
+.std1 {
+  grid-area: std1;
+  background-image: url(../img/img_06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.std2 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_std2";
+  grid-area: std2;
+}
+
+.sub_std2 {
+  grid-area: sub_std2;
+}
+
+.std3 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_std3";
+  grid-area: std3;
+}
+
+.sub_std3 {
+  grid-area: sub_std3;
+}
+
+@media (max-width: 767px) {
+  .seccion5 {
+    height: 1200px;
+  }
+  .contenedor3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px auto auto;
+    gap: 40px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "std1" "std2" "std3";
+  }
+  .std1 {
+    grid-area: std1;
+  }
+  .std2 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_std2";
+    grid-area: std2;
+  }
+  .sub_std2 {
+    grid-area: sub_std2;
+  }
+  .std3 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_std3";
+    grid-area: std3;
+  }
+  .sub_std3 {
+    grid-area: sub_std3;
+  }
+}
+.seccion6 {
+  height: auto;
+  width: 100%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.contenedor4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "srv1 srv2" "srv3 srv4" "srv5 srv6";
+}
+
+.srv1 {
+  grid-area: srv1;
+  background-image: url(../img/laptop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.srv2 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 70%;
+  gap: 0px 0px;
+  background-color: rgb(121, 152, 191);
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-areas: "sub_srv2";
+  grid-area: srv2;
+}
+
+.sub_srv2 {
+  grid-area: sub_srv2;
+  text-align: center;
+}
+
+.srv3 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 70%;
+  gap: 0px 0px;
+  background-color: rgb(200, 236, 247);
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-areas: "sub_srv3";
+  grid-area: srv3;
+}
+
+.sub_srv3 {
+  grid-area: sub_srv3;
+  text-align: center;
+}
+
+.srv4 {
+  grid-area: srv4;
+  background-image: url(../img/cableado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.srv5 {
+  grid-area: srv5;
+  background-image: url(../img/sistema_operativo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.srv6 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 70%;
+  gap: 0px 0px;
+  background-color: rgb(57, 96, 111);
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-areas: "sub_srv6";
+  grid-area: srv6;
+}
+
+.sub_srv6 {
+  grid-area: sub_srv6;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .srv1 {
+    background-position: center center;
+  }
+  .srv2 {
+    font-size: 3.5vw;
+  }
+  .srv3 {
+    font-size: 3.5vw;
+  }
+  .srv4 {
+    background-position: center center;
+  }
+  .srv5 {
+    background-position: center center;
+  }
+  .srv6 {
+    font-size: 3.5vw;
+  }
+}
+.color {
+  background-color: rgb(59, 59, 59);
+  background-size: cover;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.color .color__blanco {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 150px;
+}
+
+.color .color__blanco h1 {
+  padding-top: 50px;
+  font-size: 10vw;
+}
+
+.color .color__blanco h2 {
+  padding: 25px;
+  font-size: 5vw;
+}
+
+.contenedor6 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 30% 40%;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "email nombre" "txta1 txta2" "txtbox txtbox";
+}
+
+.email {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "email_txt";
+  grid-area: email;
+}
+
+.email_txt {
+  grid-area: email_txt;
+  font-size: 3vw;
+}
+
+.nombre {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "nombre_txt";
+  grid-area: nombre;
+}
+
+.nombre_txt {
+  grid-area: nombre_txt;
+  font-size: 3vw;
+}
+
+.txta1 {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 30%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_txta1";
+  grid-area: txta1;
+}
+
+.sub_txta1 {
+  grid-area: sub_txta1;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 1.5vw;
+  height: 25px;
+}
+
+.txta2 {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 30%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_txta2";
+  grid-area: txta2;
+}
+
+.sub_txta2 {
+  grid-area: sub_txta2;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 1.5vw;
+  height: 25px;
+}
+
+.txtbox {
+  display: grid;
+  grid-template-columns: 25%;
+  grid-template-rows: 25%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_txtbox";
+  grid-area: txtbox;
+}
+
+.sub_txtbox {
+  grid-area: sub_txtbox;
+  border: 1px solid black;
+  font-size: 1.5vw;
+}
+
+.enviar {
+  position: relative;
+  top: 80px;
+}
+
+@keyframes miEfecto {
+  100% { /* final */
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=main.css.map */
