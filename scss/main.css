@@ -44,7 +44,7 @@
   flex-direction: column;
   position: relative;
   top: 40%;
-  bottom: 50%;
+  bottom: 60%;
   font-size: 1.7vw;
   margin: 0 auto;
 }
@@ -62,10 +62,10 @@
 
 @media (max-width: 767px) {
   .seccion1 .col .txt1 {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   .seccion1 .col .txt2 {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 }
 .seccion2 {
@@ -561,146 +561,80 @@
     font-size: 3.5vw;
   }
 }
-.color {
-  background-color: rgb(59, 59, 59);
-  background-size: cover;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 100%;
-  height: 100%;
+.formulario {
+  background-color: rgb(1, 35, 71);
+  background: cover;
+  color: white;
+  font-size: 2vw;
 }
 
-.color .color__blanco {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 150px;
-}
-
-.color .color__blanco h1 {
-  padding-top: 50px;
-  font-size: 10vw;
-}
-
-.color .color__blanco h2 {
-  padding: 25px;
-  font-size: 5vw;
-}
-
-.contenedor6 {
+.contenedor8 {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 30% 40%;
+  grid-template-rows: 100%;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   justify-content: center;
   align-content: center;
-  grid-template-areas: "email nombre" "txta1 txta2" "txtbox txtbox";
+  grid-template-areas: "sub_form sub_info";
 }
 
-.email {
-  display: grid;
-  grid-template-columns: 50%;
-  grid-template-rows: 50%;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-content: center;
-  align-content: center;
-  grid-template-areas: "email_txt";
-  grid-area: email;
+.sub_form {
+  grid-area: sub_form;
+  padding: 5% 5% 5% 5%;
 }
-
-.email_txt {
-  grid-area: email_txt;
-  font-size: 3vw;
+.sub_form h2 {
+  font-weight: 900;
 }
-
-.nombre {
-  display: grid;
-  grid-template-columns: 50%;
-  grid-template-rows: 50%;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-content: center;
-  align-content: center;
-  grid-template-areas: "nombre_txt";
-  grid-area: nombre;
+.sub_form p {
+  font-weight: 300;
 }
-
-.nombre_txt {
-  grid-area: nombre_txt;
-  font-size: 3vw;
+.sub_form form {
+  display: flex;
+  flex-direction: column;
 }
-
-.txta1 {
-  display: grid;
-  grid-template-columns: 50%;
-  grid-template-rows: 30%;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-content: center;
-  align-content: center;
-  grid-template-areas: "sub_txta1";
-  grid-area: txta1;
+.sub_form form input {
+  background-color: rgb(1, 35, 71);
+  border-bottom: 2px solid white;
+  margin: 10% 0 10% 0;
 }
-
-.sub_txta1 {
-  grid-area: sub_txta1;
-  border: 1px solid black;
+.sub_form form textarea {
+  background-color: rgb(1, 35, 71);
   border-radius: 25px;
-  font-size: 1.5vw;
-  height: 25px;
+  border: 2px solid white;
+  padding: 5% 0 0 5%;
+  height: 25vw;
 }
 
-.txta2 {
-  display: grid;
-  grid-template-columns: 50%;
-  grid-template-rows: 30%;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-content: center;
-  align-content: center;
-  grid-template-areas: "sub_txta2";
-  grid-area: txta2;
+.sub_info {
+  grid-area: sub_info;
+  background-image: url(../img/img_07.jpg);
+  background-size: cover;
+  background-color: white;
 }
 
-.sub_txta2 {
-  grid-area: sub_txta2;
-  border: 1px solid black;
-  border-radius: 25px;
-  font-size: 1.5vw;
-  height: 25px;
+@media (max-width: 767px) {
+  .contenedor8 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vw 100vw;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_form" "sub_info";
+  }
+  .sub_form {
+    grid-area: sub_form;
+  }
+  .sub_info {
+    grid-area: sub_info;
+  }
 }
-
-.txtbox {
-  display: grid;
-  grid-template-columns: 25%;
-  grid-template-rows: 25%;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-content: center;
-  align-content: center;
-  grid-template-areas: "sub_txtbox";
-  grid-area: txtbox;
-}
-
-.sub_txtbox {
-  grid-area: sub_txtbox;
-  border: 1px solid black;
-  font-size: 1.5vw;
-}
-
-.enviar {
-  position: relative;
-  top: 80px;
-}
-
 @keyframes miEfecto {
-  100% { /* final */
+  100% {
     transform: rotate(360deg);
   }
 }/*# sourceMappingURL=main.css.map */
