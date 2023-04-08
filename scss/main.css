@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: sans-serif;
 }
 
 .header {
@@ -326,6 +327,12 @@
 }
 .seccion5 {
   background-color: rgb(122, 122, 122);
+}
+.seccion5 .contenedor3 .std2 .sub_std2 h2 {
+  font-weight: 900;
+}
+.seccion5 .contenedor3 .std3 .sub_std3 h2 {
+  font-weight: 900;
 }
 
 .contenedor3 {

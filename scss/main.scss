@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+  font-family: sans-serif;
 }
 
 $display-font-sizes: (
@@ -404,6 +405,22 @@ $initialism-font-size:        $small-font-size;
 
     .seccion5 {
         background-color: rgb(122, 122, 122);
+        .contenedor3 {
+          .std2 {
+            .sub_std2 {
+              h2 {
+                font-weight: 900;
+              }
+            }
+          }
+          .std3 {
+            .sub_std3{
+              h2 {
+                font-weight: 900;
+              }
+            }
+          }
+        }
     }
     .contenedor3 {
         display: grid;
@@ -443,6 +460,7 @@ $initialism-font-size:        $small-font-size;
         padding-left: 10%;
         height: 28vw;
       }
+    
       
       .std3 {
         display: grid;
