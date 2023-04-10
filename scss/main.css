@@ -35,37 +35,139 @@
 
 .seccion1 {
   background-color: grey;
+  height: 60vw;
+}
+.seccion1 .grid_1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "box_1 box_2" "box_3 box_4";
+}
+.seccion1 .box_1 {
+  grid-area: box_1;
+  background-image: url(../img/img_01.jpg);
+  background-size: cover;
+  height: 30vw;
+}
+.seccion1 .box_2 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 70%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_box_2";
+  grid-area: box_2;
   text-align: center;
+  align-items: center;
 }
-.seccion1 .txt1 {
-  display: flex;
-  height: 188px;
-  width: 100%;
-  flex-direction: column;
-  position: relative;
-  top: 40%;
-  bottom: 60%;
-  font-size: 1.7vw;
-  margin: 0 auto;
+.seccion1 .sub_box_2 {
+  grid-area: sub_box_2;
 }
-.seccion1 .txt2 {
-  display: flex;
-  height: 188px;
-  width: 100%;
-  flex-direction: column;
-  position: relative;
-  top: 40%;
-  bottom: 50%;
-  font-size: 1.7vw;
-  margin: 0 auto;
+.seccion1 .sub_box_2 h2 {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.seccion1 .sub_box_2 p {
+  font-size: 1.8vw;
+}
+.seccion1 .box_3 {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 70%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_box_3";
+  grid-area: box_3;
+  text-align: center;
+  align-items: center;
+}
+.seccion1 .sub_box_3 {
+  grid-area: sub_box_3;
+}
+.seccion1 .sub_box_3 h2 {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.seccion1 .sub_box_3 p {
+  font-size: 1.8vw;
+}
+.seccion1 .box_4 {
+  grid-area: box_4;
+  background-image: url(../img/img_02.jpg);
+  background-size: cover;
+  height: 30vw;
 }
 
 @media (max-width: 767px) {
-  .seccion1 .col .txt1 {
-    font-size: 2vw;
+  .seccion1 {
+    height: 800px;
   }
-  .seccion1 .col .txt2 {
-    font-size: 2vw;
+  .seccion1 .grid_1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "box_1" "box_2" "box_4" "box_3";
+    height: 100%;
+  }
+  .seccion1 .box_1 {
+    grid-area: box_1;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .seccion1 .box_2 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 70%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_box_2";
+    grid-area: box_2;
+  }
+  .seccion1 .sub_box_2 {
+    grid-area: sub_box_2;
+  }
+  .seccion1 .sub_box_2 h2 {
+    font-size: 5vw;
+  }
+  .seccion1 .sub_box_2 p {
+    font-size: 3vw;
+  }
+  .seccion1 .box_4 {
+    grid-area: box_4;
+    height: 100%;
+  }
+  .seccion1 .box_3 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 70%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_box_3";
+    grid-area: box_3;
+  }
+  .seccion1 .sub_box_3 {
+    grid-area: sub_box_3;
+  }
+  .seccion1 .sub_box_3 h2 {
+    font-size: 5vw;
+  }
+  .seccion1 .sub_box_3 p {
+    font-size: 3vw;
   }
 }
 .seccion2 {
@@ -615,7 +717,7 @@
 }
 
 @media (max-width: 767px) {
-  .contenedor8 {
+  .contenedor8 .contenedor8 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100vw 100vw;
@@ -626,10 +728,10 @@
     align-content: center;
     grid-template-areas: "sub_form" "sub_info";
   }
-  .sub_form {
+  .contenedor8 .sub_form {
     grid-area: sub_form;
   }
-  .sub_info {
+  .contenedor8 .sub_info {
     grid-area: sub_info;
   }
 }
