@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap");
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: sans-serif;
+  font-family: "Bellota Text", sans-serif;
 }
 
 .header {
@@ -32,9 +35,13 @@
   position: absolute;
   left: 50px;
 }
+.presentacion .presentacion__txt div div h1 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 900;
+}
 
 .seccion1 {
-  background-color: grey;
+  background-color: rgb(41, 40, 39);
   height: 60vw;
 }
 .seccion1 .grid_1 {
@@ -68,11 +75,14 @@
   grid-area: sub_box_2;
 }
 .seccion1 .sub_box_2 h2 {
-  font-size: 3vw;
+  font-size: 2.8vw;
   font-weight: 600;
+  font-family: "Kodchasan", sans-serif;
+  color: white;
 }
 .seccion1 .sub_box_2 p {
   font-size: 1.8vw;
+  color: whitesmoke;
 }
 .seccion1 .box_3 {
   display: grid;
@@ -91,11 +101,14 @@
   grid-area: sub_box_3;
 }
 .seccion1 .sub_box_3 h2 {
-  font-size: 3vw;
+  font-size: 2.8vw;
   font-weight: 600;
+  font-family: "Kodchasan", sans-serif;
+  color: white;
 }
 .seccion1 .sub_box_3 p {
   font-size: 1.8vw;
+  color: whitesmoke;
 }
 .seccion1 .box_4 {
   grid-area: box_4;
