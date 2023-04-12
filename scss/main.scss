@@ -887,9 +887,7 @@ $initialism-font-size:        $small-font-size;
 
 }
 
-@media (max-width: 767px) {
-  .contenedor8 {    
-  
+@media (max-width: 767px) {    
   .contenedor8 {
     display: grid;
     grid-template-columns: 100%;
@@ -915,7 +913,7 @@ $initialism-font-size:        $small-font-size;
   }
   
   } 
-}
+
 
 @keyframes miEfecto {
    

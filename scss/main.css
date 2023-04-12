@@ -753,7 +753,7 @@
 }
 
 @media (max-width: 767px) {
-  .contenedor8 .contenedor8 {
+  .contenedor8 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100vw 100vw;
@@ -764,10 +764,10 @@
     align-content: center;
     grid-template-areas: "sub_form" "sub_info";
   }
-  .contenedor8 .sub_form {
+  .sub_form {
     grid-area: sub_form;
   }
-  .contenedor8 .sub_info {
+  .sub_info {
     grid-area: sub_info;
   }
 }
