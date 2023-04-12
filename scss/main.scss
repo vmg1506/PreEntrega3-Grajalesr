@@ -42,7 +42,7 @@ $initialism-font-size:        $small-font-size;
 
 
 
-.pagina1
+
 
 .header {
     width: 100%;
@@ -388,6 +388,7 @@ $initialism-font-size:        $small-font-size;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "area1 area2 area3";
+    align-items: center;
     
     
    
@@ -558,14 +559,22 @@ $initialism-font-size:        $small-font-size;
           .std2 {
             .sub_std2 {
               h2 {
+                font-size: 3vw;
                 font-weight: 900;
+              }
+              ul{
+                font-size: 1.8vw;
               }
             }
           }
           .std3 {
             .sub_std3{
               h2 {
-                font-weight: 900;
+                font-size: 3vw;
+                font-weight: 900;                
+              }
+              p{
+                font-size: 1.8vw;
               }
             }
           }
@@ -605,9 +614,9 @@ $initialism-font-size:        $small-font-size;
         border: 1px transparent black;
         border-radius: 20px;
         font-size: 2vw;
-        background-color: rgba(255, 238, 1, 0.945);
+        background-color: rgba(255, 217, 1, 0.932);
         padding-left: 10%;
-        height: 28vw;
+        height: 18vw;
       }
     
       
@@ -627,17 +636,19 @@ $initialism-font-size:        $small-font-size;
         grid-area: sub_std3;
         border: 1px transparent black;
         border-radius: 20px;
-        height: 18vw;
+        height: 100px;
         font-size: 2vw;
-        background-color: rgba(255, 238, 1, 0.945);
+        background-color: rgba(255, 217, 1, 0.932);
         padding-left: 10%;
+        height: 17vw;
+
       }
       
 
 
 @media (max-width: 767px) {
     .seccion5 {
-        height: 1200px;
+        height: 900px;
     }
     .contenedor3 {
         display: grid;
@@ -667,6 +678,7 @@ $initialism-font-size:        $small-font-size;
       .sub_std2 {
         grid-area: sub_std2;
         height: 25vw;
+        padding-top: 7%; 
       }
       
       .std3 {
@@ -684,6 +696,7 @@ $initialism-font-size:        $small-font-size;
       .sub_std3 {
         grid-area: sub_std3;
         height: 25vw;
+        padding-top: 7%;
         
       }
 
