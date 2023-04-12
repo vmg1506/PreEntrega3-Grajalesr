@@ -379,16 +379,18 @@ $initialism-font-size:        $small-font-size;
     height: 400px;
     display: flex;
     align-items: center;
+    
     background-color: rgb(173, 169, 169);
 }
 .contenedor2 {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "area1 area2 area3";
-    align-items: center;
+    align-content: center;
+    
     
     
    
@@ -403,7 +405,6 @@ $initialism-font-size:        $small-font-size;
     grid-auto-flow: row;
     border-radius: 20px;
     height: auto;
-    width: auto;
     grid-template-areas: "sub_area1";
     grid-area: area1;
     justify-content: center;
@@ -486,6 +487,7 @@ $initialism-font-size:        $small-font-size;
         display: flex;
         justify-content: center;
         background-color: rgb(199, 197, 197);
+        
     }
         .contenedor2 {
             display: grid;
@@ -648,7 +650,7 @@ $initialism-font-size:        $small-font-size;
 
 @media (max-width: 767px) {
     .seccion5 {
-        height: 900px;
+        height: 1000px;
     }
     .contenedor3 {
         display: grid;
