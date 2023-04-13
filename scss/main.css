@@ -788,6 +788,7 @@
   background-color: rgb(1, 35, 71);
   border-bottom: 2px solid white;
   margin: 10% 0 10% 0;
+  color: white;
 }
 .sub_form form textarea {
   background-color: rgb(1, 35, 71);
@@ -795,6 +796,7 @@
   border: 2px solid white;
   padding: 5% 0 0 5%;
   height: 25vw;
+  color: white;
 }
 
 .sub_info {

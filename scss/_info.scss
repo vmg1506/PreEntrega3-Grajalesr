@@ -1,0 +1,421 @@
+.seccion3 {
+    background-image: url(../img/img_04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    .contenedor {  
+        display: grid;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "txt1 img"
+          "txt1 txt2";
+        color: white;
+      }
+      
+      .txt1 { 
+        grid-area: txt1;
+        background-color: rgb(122, 122, 122);
+        height: 100%; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        div {
+            text-align: center;
+            
+            margin: 0 auto;
+            width: 100%;
+            height: 40%;
+        }
+        }
+      
+      .img { 
+        background-image: url(../img/img_05.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-area: img;
+        width: 100%;
+        height: auto;   
+        }
+      
+      .txt2 { 
+        grid-area: txt2;
+        background-color: rgb(226, 225, 225);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+            
+        }
+      
+}
+
+@media (max-width: 767px) {
+    .seccion3 {
+        background-image: url(../img/img_04.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 750px;
+            .contenedor {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 40% 20% 40%;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas: "txt1" "img" "txt2";
+            .txt1 {
+                grid-area: txt1;
+                font-size: smaller;
+                div {
+                    height: 80%;
+
+                }
+                }
+            .img {
+                grid-area: img;
+                height: 100%;
+                }
+            .txt2 {
+                grid-area: txt2;
+                    div {
+                        width: auto;
+                        
+                    }
+                }
+             }
+      
+        }
+}
+.seccion4 {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    
+    background-color: rgb(173, 169, 169);
+}
+.contenedor2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "area1 area2 area3";
+    align-content: center;
+    
+    
+    
+   
+    
+  }
+  
+  .area1 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    border-radius: 20px;
+    height: auto;
+    grid-template-areas: "sub_area1";
+    grid-area: area1;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  
+
+  .sub_area1 {
+    grid-area: sub_area1;
+    font-size: smaller;
+    animation: miEfecto 2s linear 1s 1;
+  }
+  
+  
+  
+
+  .area2 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas: "sub_area2";
+    grid-area: area2;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .sub_area2 {
+    grid-area: sub_area2;
+    font-size: smaller;
+    animation: miEfecto 2s linear 1s 1;
+  }
+  
+  
+  
+  .area3 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    grid-template-areas: "sub_area3";
+    grid-area: area3;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .sub_area3 {
+    grid-area: sub_area3;
+    font-size: smaller;
+    animation: miEfecto 2s linear 1s 1;
+  }
+
+  @media (min-width: 767px) {
+    .area1:hover {
+        box-shadow: -11px -7px 9px 3px black;
+      }
+    .area2:hover {
+        box-shadow: 1px -2px 9px 9px black;
+      }
+    .area3:hover {
+        box-shadow: 11px -7px 9px 3px black;
+      }
+  }
+
+  @media (max-width: 767px) {
+    .seccion4 {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(199, 197, 197);
+        
+    }
+        .contenedor2 {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 25% 25%;
+            margin-top: 10%;
+            margin: 10% auto;
+            gap: 10% 0px;
+            grid-auto-flow: row;
+            grid-template-areas: "area1" "area2" "area3";
+           
+        }
+        
+        .area1 {
+            display: grid;
+            grid-template-columns: 70%;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            grid-template-areas: "sub_area1";
+            grid-area: area1;
+        }
+        
+        .sub_area1 {
+            grid-area: sub_area1;
+        }
+        
+        .area2 {
+            display: grid;
+            grid-template-columns: 70%;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            grid-template-areas: "sub_area2";
+            grid-area: area2;
+        }
+        
+        .sub_area2 {
+            grid-area: sub_area2;
+        }
+        
+        .area3 {
+            display: grid;
+            grid-template-columns: 70%;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            grid-template-areas: "sub_area3";
+            grid-area: area3;
+        }
+        
+        .sub_area3 {
+            grid-area: sub_area3;
+        }
+        
+    }
+
+
+    .seccion5 {
+        background-color: rgb(122, 122, 122);
+        .contenedor3 {
+          .std2 {
+            .sub_std2 {
+              h2 {
+                font-size: 3vw;
+                font-weight: 900;
+              }
+              ul{
+                font-size: 1.8vw;
+              }
+            }
+          }
+          .std3 {
+            .sub_std3{
+              h2 {
+                font-size: 3vw;
+                font-weight: 900;                
+              }
+              p{
+                font-size: 1.8vw;
+              }
+            }
+          }
+        }
+    }
+    .contenedor3 {
+        display: grid;
+        height: 800px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "std1 std2" "std1 std3";
+      }
+      
+      .std1 {
+        grid-area: std1;
+        background-image: url(../img/img_06.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .std2 {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 80%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: "sub_std2";
+        grid-area: std2;
+      }
+      
+      .sub_std2 {
+        grid-area: sub_std2;
+        border: 1px transparent black;
+        border-radius: 20px;
+        font-size: 2vw;
+        background-color: rgba(255, 217, 1, 0.932);
+        padding-left: 10%;
+        height: 18vw;
+      }
+    
+      
+      .std3 {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 80%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: "sub_std3";
+        grid-area: std3;
+      }
+      
+      .sub_std3 {
+        grid-area: sub_std3;
+        border: 1px transparent black;
+        border-radius: 20px;
+        height: 100px;
+        font-size: 2vw;
+        background-color: rgba(255, 217, 1, 0.932);
+        padding-left: 10%;
+        height: 17vw;
+
+      }
+      
+
+
+@media (max-width: 767px) {
+    .seccion5 {
+        height: 1000px;
+    }
+    .contenedor3 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 500px auto auto;
+        gap: 40px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "std1" "std2" "std3";
+      }
+      
+      .std1 {
+        grid-area: std1;
+      }
+      
+      .std2 {
+        display: grid;
+        grid-template-columns: 70%;
+        grid-template-rows: 50%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: "sub_std2";
+        grid-area: std2;
+      }
+      
+      .sub_std2 {
+        grid-area: sub_std2;
+        height: 25vw;
+        padding-top: 7%; 
+      }
+      
+      .std3 {
+        display: grid;
+        grid-template-columns: 70%;
+        grid-template-rows: 50%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: "sub_std3";
+        grid-area: std3;
+      }
+      
+      .sub_std3 {
+        grid-area: sub_std3;
+        height: 25vw;
+        padding-top: 7%;
+        
+      }
+
+}
