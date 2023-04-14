@@ -1,0 +1,226 @@
+.contenedor9 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    gap: 0px 0px;
+    background-image: url(../img/img_09.jpg);
+    background-size: cover;
+    background-position: center center;
+    grid-auto-flow: row;
+    grid-template-areas: "web1";
+    
+    
+  }
+  
+  .web1 {
+
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: "sub_web1";
+    grid-area: web1;
+    opacity: 0.8;
+    height: 400px;
+    
+  }
+  
+  .sub_web1 {
+    grid-area: sub_web1;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    height: 200px;
+    p {
+        font-weight: 600;
+    }
+    h2 {
+        font-weight: 900;
+        
+    }
+    a {
+        background-color: blue;
+        border-radius: 50px;
+    }
+  }
+  
+  .contenedor10 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "web2";
+  }
+  
+  .web2 {
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: ".";
+    grid-area: web2;
+  }
+  
+
+  .contenedor11 {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 20% 1fr 1fr 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "serv1 serv1" "serv2 serv3" "serv4 serv5" "serv6 serv6";
+  }
+  
+  .serv1 {
+    grid-area: serv1;
+  }
+  
+  .serv2 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_serv2";
+    grid-area: serv2;
+  }
+  
+  .sub_serv2 {
+    grid-area: sub_serv2;
+  }
+  
+  .serv3 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_serv3";
+    grid-area: serv3;
+  }
+  
+  .sub_serv3 {
+    grid-area: sub_serv3;
+  }
+  
+  .serv4 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_serv4";
+    grid-area: serv4;
+  }
+  
+  .sub_serv4 {
+    grid-area: sub_serv4;
+  }
+  
+  .serv5 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_serv5";
+    grid-area: serv5;
+  }
+  
+  .sub_serv5 {
+    grid-area: sub_serv5;
+  }
+  
+  .serv6 {
+    grid-area: serv6;
+  }
+
+
+  .contenedor12 {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 60%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "banner1 banner2";
+  }
+  
+  .banner1 {
+    grid-area: banner1;
+  }
+  
+  .banner2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "sub_banner2_1 sub_banner2_2" "sub_banner2_3 sub_banner2_4";
+    grid-area: banner2;
+  }
+  
+  .sub_banner2_1 {
+    grid-area: sub_banner2_1;
+  }
+  
+  .sub_banner2_2 {
+    grid-area: sub_banner2_2;
+  }
+  
+  .sub_banner2_3 {
+    grid-area: sub_banner2_3;
+  }
+  
+  .sub_banner2_4 {
+    grid-area: sub_banner2_4;
+  }
+
+  .contenedor13 {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 60%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "detalle1 detalle2";
+  }
+  
+  .detalle1 {
+    grid-area: detalle1;
+  }
+  
+  .detalle2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "sub_detalle2_2" ".";
+    grid-area: detalle2;
+  }
+  
+  .sub_detalle2_2 {
+    grid-area: sub_detalle2_2;
+  }
+  
