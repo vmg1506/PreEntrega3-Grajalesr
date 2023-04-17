@@ -1,74 +1,163 @@
-.contenedor9 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50%;
-    gap: 0px 0px;
-    background-image: url(../img/img_09.jpg);
-    background-size: cover;
-    background-position: center center;
-    grid-auto-flow: row;
-    grid-template-areas: "web1";
-    
-    
-  }
+.about {
   
-  .web1 {
+  background-image: url(../img/img_09.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
 
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: 80%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    align-items: center;
-    grid-template-areas: "sub_web1";
-    grid-area: web1;
-    opacity: 0.8;
-    height: 400px;
-    
-  }
+
+.contenedor9 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "web1 web2 web4" "web1 web3 web5";
+  height: 400px;
   
-  .sub_web1 {
-    grid-area: sub_web1;
-    background-color: whitesmoke;
-    border-radius: 50px;
-    height: 200px;
-    p {
-        font-weight: 600;
-    }
-    h2 {
-        font-weight: 900;
-        
-    }
-    a {
-        background-color: blue;
-        border-radius: 50px;
-    }
-  }
+}
+
+.web1 {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_web1";
+  grid-area: web1;
+  color: white;
   
-  .contenedor10 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "web2";
-  }
+}
+
+.sub_web1 {
+  grid-area: sub_web1;
+ 
+}
+
+.web2 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
   
-  .web2 {
-    display: grid;
-    grid-template-columns: 60%;
-    grid-template-rows: 80%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: ".";
-    grid-area: web2;
-  }
+  align-content: center;
+  grid-template-areas: "sub_web2";
+  grid-area: web2;
+}
+
+.sub_web2 {
+  grid-area: sub_web2;
+  border: 1px solid magenta;
+  border-radius: 25px;
+
   
+}
+
+.web3 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_web3";
+  grid-area: web3;
+}
+
+.sub_web3 {
+  grid-area: sub_web3;
+  border: 1px solid magenta;
+  border-radius: 25px;
+}
+
+.web4 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_web4";
+  grid-area: web4;
+}
+
+.sub_web4 {
+  grid-area: sub_web4;
+  border: 1px solid magenta;
+  border-radius: 25px;
+}
+
+.web5 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_web5";
+  grid-area: web5;
+}
+
+.sub_web5 {
+  grid-area: sub_web5;
+  border: 1px solid magenta;
+  border-radius: 25px;
+}
+
+  
+.contenedor10 {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 50% 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "web4" "web5";
+}
+
+.web4 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_web4";
+  grid-area: web4;
+}
+
+.sub_web4 {
+  grid-area: sub_web4;
+}
+
+.web5 {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_web5";
+  grid-area: web5;
+}
+
+.sub_web5 {
+  grid-area: sub_web5;
+}
+
 
   .contenedor11 {
     display: grid;
