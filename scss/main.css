@@ -922,6 +922,63 @@
   grid-area: sub_web4;
 }
 
+@media (max-width: 767px) {
+  .contenedor9 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "web1" "web2" "web3" "web4";
+  }
+  .web1 {
+    grid-area: web1;
+  }
+  .web2 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_web2";
+    grid-area: web2;
+  }
+  .sub_web2 {
+    grid-area: sub_web2;
+  }
+  .web3 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_web3";
+    grid-area: web3;
+  }
+  .sub_web3 {
+    grid-area: sub_web3;
+  }
+  .web4 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_web4";
+    grid-area: web4;
+  }
+  .sub_web4 {
+    grid-area: sub_web4;
+  }
+}
 .loader {
   display: flex;
   align-items: center;
