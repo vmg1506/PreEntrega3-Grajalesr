@@ -932,6 +932,7 @@
     justify-content: center;
     align-content: center;
     grid-template-areas: "web1" "web2" "web3" "web4";
+    height: 650px;
   }
   .web1 {
     grid-area: web1;
@@ -1022,10 +1023,10 @@
 }
 .contenedor10 {
   background-color: black;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 800px;
 }
 .contenedor10 p {
   text-align: center;
