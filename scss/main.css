@@ -934,6 +934,9 @@
     grid-template-areas: "web1" "web2" "web3" "web4";
     height: 650px;
   }
+  .contenedor9 h2 {
+    font-size: 20px;
+  }
   .web1 {
     grid-area: web1;
   }

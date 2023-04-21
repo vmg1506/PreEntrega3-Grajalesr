@@ -99,6 +99,9 @@
     align-content: center;
     grid-template-areas: "web1" "web2" "web3" "web4";
     height: 650px;
+    h2 {
+        font-size: 20px;
+    }
   }
   
   .web1 {
